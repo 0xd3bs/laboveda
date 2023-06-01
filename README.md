@@ -54,7 +54,10 @@ declare --contract target/dev/basecamp_es_final_ERC20.sierra.json --account vers
 Error: StarkException: (500, {'code': <StarknetErrorCode.COMPILATION_FAILED: 3>, 'message': 'Compilation failed. Error: Invalid Sierra program.\n'})
 ```
 
-### Versión operativa del contrato que no incluye ```bash --allowed-libfuncs-list-name experimental_v0.1.0 ``
+### Versión operativa del contrato que no incluye
+```bash
+--allowed-libfuncs-list-name experimental_v0.1.0
+```
 
 ```bash
 starknet deploy --class_hash 0x58459a6da6313f3e62be4a86ba977cc6f2b6bf9d673678541d77ceadd32f164 --inputs 1522211063044079066910695810296106137330468179 1145197640 1000000 0 0x0375f61E4F51Ef9Ab60cb2873e59774839743C7447e0F68A1464F2B1AE3E71E6 --account version_1077_test
