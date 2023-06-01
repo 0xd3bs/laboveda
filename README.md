@@ -59,6 +59,30 @@ Error: StarkException: (500, {'code': <StarknetErrorCode.COMPILATION_FAILED: 3>,
 --allowed-libfuncs-list-name experimental_v0.1.0
 ```
 
+### Template
 ```bash
-starknet deploy --class_hash 0x58459a6da6313f3e62be4a86ba977cc6f2b6bf9d673678541d77ceadd32f164 --inputs 1522211063044079066910695810296106137330468179 1145197640 1000000 0 0x0375f61E4F51Ef9Ab60cb2873e59774839743C7447e0F68A1464F2B1AE3E71E6 --account version_1077_test
+starknet deploy --class_hash <> --inputs <> --account version_1077_test
+```
+
+```bash
+starknet declare --contract target/dev/laboveda_BOVEDA.sierra.json --account version_1077_test
+
+Sending the transaction with max_fee: 0.000022 ETH (21676123269686 WEI).
+Declare transaction was sent.
+Contract class hash: 0x314a448246e23af87e526529e9d5b8086e04d94cefdb03f688a381db6a83661
+Transaction hash: 0x4877eb8e43e6bd727dd2e6f307a111ecad7fc6618963336688504fc22f875a0
+```
+
+### Template
+```bash
+starknet deploy --class_hash <> --inputs <> --account version_1077_test
+```
+
+```bash
+starknet deploy --class_hash 0x314a448246e23af87e526529e9d5b8086e04d94cefdb03f688a381db6a83661 --inputs 0x04e145f982a34800a64cf301e20e6a29ea38f759abc93247622209dce82edf81 --account version_1077_test
+
+Sending the transaction with max_fee: 0.000077 ETH (76700858605602 WEI).
+Invoke transaction for contract deployment was sent.
+Contract address: 0x03589cf235b136e84dd1ce0fd612f130f2d135b764b74be9fc8fc32118a869d8
+Transaction hash: 0x7f6b8d4d59b88b6aca88fd92192e7a8f285c6756fb771010506ad94fa94f319
 ```
