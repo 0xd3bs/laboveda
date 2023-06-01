@@ -49,3 +49,12 @@ Error: StarkException: (500, {'code': <StarknetErrorCode.COMPILATION_FAILED: 3>,
 ```bash
 starknet deploy --class_hash <TODO> --inputs <TODO> --account version_1077_test
 ```
+
+```bash
+starknet deploy --class_hash 0x3086b28f5f5822fbb9f73e1ce37cb04658ddffc165e7e5dcb80505e8e6b53ed --inputs 0x04e145f982a34800a64cf301e20e6a29ea38f759abc93247622209dce82edf81 --account version_1077_test
+```
+
+## Contract address: (laboveda)
+```bash
+0x07ee29feac313f5641f1b9a4481088dee935c95a170802f3601a21f63c76f937
+```

@@ -86,7 +86,8 @@ mod Boveda {
         let shares = if _total_supply::read() == 0.into() {
             amount
         } else {
-            amount * _total_supply::read() / _erc20_dispatcher().balance_of(get_contract_address())
+            //amount * _total_supply::read() / _erc20_dispatcher().balance_of(get_contract_address())
+            amount
         };
 
         _mint(get_caller_address(), shares);
@@ -103,8 +104,11 @@ mod Boveda {
         // (T - s) / T = (B - a) / B
 
         // a = sB / T
-        let amount: u256 = (shares * _erc20_dispatcher().balance_of(get_contract_address()))
-            / _total_supply::read();
+        //let amount: u256 = (shares * _erc20_dispatcher().balance_of(get_contract_address()))
+        //    / _total_supply::read();
+
+        let amount: u256 = shares;
+
         _burn(get_caller_address(), shares);
         _erc20_dispatcher().transfer(get_caller_address(), amount);
     }
