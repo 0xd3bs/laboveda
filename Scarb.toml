@@ -1,0 +1,12 @@
+[package]
+name = "laboveda"
+version = "0.1.0"
+
+[dependencies]
+starknet = ">=1.0.0"
+
+[scripts]
+test = "cairo-test --starknet ."
+test_single= "cairo-test --starknet . -f"
+
+[[target.starknet-contract]]

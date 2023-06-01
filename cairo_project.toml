@@ -1,0 +1,3 @@
+[crate_roots]
+laboveda = "src"
+tests = "tests"
